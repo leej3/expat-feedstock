@@ -73,6 +73,11 @@ Linux: [![Circle CI](https://circleci.com/gh/conda-forge/expat-feedstock.svg?sty
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/expat-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/expat-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/expat-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/expat-feedstock/branch/master)
 
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/expat/badges/version.svg)](https://anaconda.org/conda-forge/expat)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/expat/badges/downloads.svg)](https://anaconda.org/conda-forge/expat)
+
 
 Updating expat-feedstock
 ========================

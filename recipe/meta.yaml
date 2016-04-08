@@ -15,8 +15,7 @@ requirements:
 
 test:
     commands:
-        - xmlwf.exe -h  # [win]
-        - xmlwf -h  # [not win]
+        - xmlwf -h
 
 about:
     home: http://expat.sourceforge.net/
@@ -25,5 +24,6 @@ about:
 
 extra:
     recipe-maintainers:
-        - ocefpaf
         - kwilcox
+        - ocefpaf
+        - pelson
