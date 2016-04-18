@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD
 
-Summary: Expat XML parser library in C.
+Summary: Expat XML parser library in C
 
 
 
