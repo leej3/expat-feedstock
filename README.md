@@ -5,7 +5,7 @@ Home: http://expat.sourceforge.net/
 
 Package license: MIT
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Expat XML parser library in C
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/expat-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/expat-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/expat-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/expat-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/expat-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/expat-feedstock/branch/master)
