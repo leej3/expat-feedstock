@@ -24,7 +24,7 @@ requirements:
 
 test:
     requires:
-        - python {{ environ['PY_VER'] + '*' }}  # [win]
+        - python {{ PY_VER ~ '*' }}  # [win]
     commands:
         - xmlwf -h
 
