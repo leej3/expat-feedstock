@@ -1,40 +1,48 @@
-{% set version = "2.1.0" %}
+{% set version = "2.2.1" %}
 
 package:
-    name: expat
-    version: {{ version }}
+  name: expat
+  version: {{ version }}
 
 source:
-    fn: expat-{{ version }}.tar.bz2
-    url: http://downloads.sourceforge.net/project/expat/expat/{{ version }}/expat-{{ version }}.tar.gz
-    md5: dd7dab7a5fea97d2a6a43f511449b7cd
+  fn: expat-{{ version }}.tar.bz2
+  url: http://downloads.sourceforge.net/project/expat/expat/{{ version }}/expat-{{ version }}.tar.bz2
+  sha256: 1868cadae4c82a018e361e2b2091de103cd820aaacb0d6cfa49bd2cd83978885
 
 build:
-    number: 2
-    features:
-        - vc9  # [win and py27]
-        - vc10  # [win and py34]
-        - vc14  # [win and py35]
+  number: 0
+  features:
+    - vc9  # [win and py27]
+    - vc10  # [win and py34]
+    - vc14  # [win and (py35 or py36)]
 
 requirements:
-    build:
-        - cmake  # [win]
-        - python  # [win]
-        - msinttypes  # [win]
+  build:
+    - python  # [win]
+    - cmake  # [win]
+    - msinttypes  # [win]
+    - vc 9  # [win and py27]
+    - vc 10  # [win and py34]
+    - vc 14  # [win and (py35 or py36)]
+  run:
+    - vc 9  # [win and py27]
+    - vc 10  # [win and py34]
+    - vc 14  # [win and (py35 or py36)]
 
 test:
-    requires:
-        - python {{ environ['PY_VER'] + '*' }}  # [win]
-    commands:
-        - xmlwf -h
+  commands:
+    - xmlwf -h
+    - conda inspect linkages -p $PREFIX expat  # [not win]
+    - conda inspect objects -p $PREFIX expat  # [osx]
 
 about:
-    home: http://expat.sourceforge.net/
-    license: MIT
-    summary: Expat XML parser library in C
+  home: http://expat.sourceforge.net/
+  license: MIT
+  license_file: COPYING
+  summary: 'Expat XML parser library in C.'
 
 extra:
-    recipe-maintainers:
-        - kwilcox
-        - ocefpaf
-        - pelson
+  recipe-maintainers:
+    - kwilcox
+    - ocefpaf
+    - pelson
