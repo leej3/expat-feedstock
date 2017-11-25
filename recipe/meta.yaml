@@ -1,23 +1,18 @@
-{% set version = "2.2.1" %}
+{% set version = "2.2.5" %}
 
 package:
   name: expat
   version: {{ version }}
 
 source:
-  fn: expat-{{ version }}.tar.bz2
   url: http://downloads.sourceforge.net/project/expat/expat/{{ version }}/expat-{{ version }}.tar.bz2
-  sha256: 1868cadae4c82a018e361e2b2091de103cd820aaacb0d6cfa49bd2cd83978885
-  patches:
-    # Fixes https://github.com/conda-forge/expat-feedstock/pull/11#issuecomment-312501043
-    utf8.patch
+  sha256: d9dc32efba7e74f788fcc4f212a43216fc37cf5f23f4c2339664d473353aedf6
 
 build:
   number: 0
   skip: True  # [win and py36]
   features:
     - vc9  # [win and py27]
-    - vc10  # [win and py34]
     - vc14  # [win and (py35 or py36)]
 
 requirements:
@@ -26,18 +21,16 @@ requirements:
     - cmake  # [win]
     - msinttypes  # [win]
     - vc 9  # [win and py27]
-    - vc 10  # [win and py34]
     - vc 14  # [win and (py35 or py36)]
   run:
     - vc 9  # [win and py27]
-    - vc 10  # [win and py34]
     - vc 14  # [win and (py35 or py36)]
 
 test:
   commands:
     - xmlwf -h
-    - conda inspect linkages -p $PREFIX expat  # [not win]
-    - conda inspect objects -p $PREFIX expat  # [osx]
+    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
+    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
 about:
   home: http://expat.sourceforge.net/
