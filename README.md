@@ -7,21 +7,23 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Expat XML parser library in C.
+Summary: Expat XML parser library in C
 
 
 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/expat-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/expat-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/expat-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/expat-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/expat-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/expat-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/expat-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/expat-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/expat-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/expat-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/expat-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/expat-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/expat/badges/version.svg)](https://anaconda.org/conda-forge/expat)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/expat/badges/downloads.svg)](https://anaconda.org/conda-forge/expat)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-expat-green.svg)](https://anaconda.org/conda-forge/expat) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/expat.svg)](https://anaconda.org/conda-forge/expat) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/expat.svg)](https://anaconda.org/conda-forge/expat) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/expat.svg)](https://anaconda.org/conda-forge/expat) |
 
 Installing expat
 ================
