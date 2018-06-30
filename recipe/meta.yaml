@@ -1,30 +1,28 @@
 {% set version = "2.2.5" %}
+{% set ver = version|replace(".", "_") %}
 
 package:
   name: expat
   version: {{ version }}
 
 source:
-  url: http://downloads.sourceforge.net/project/expat/expat/{{ version }}/expat-{{ version }}.tar.bz2
+  url: https://github.com/libexpat/libexpat/releases/download/R_{{ ver }}/expat-{{ version }}.tar.bz2
   sha256: d9dc32efba7e74f788fcc4f212a43216fc37cf5f23f4c2339664d473353aedf6
 
 build:
-  number: 0
-  skip: True  # [win and py36]
-  features:
-    - vc9  # [win and py27]
-    - vc14  # [win and (py35 or py36)]
+  number: 1
+  run_exports:
+    # changes soname at major versions, default settings OK
+    # https://abi-laboratory.pro/tracker/timeline/expat/
+    - {{ pin_subpackage('expat') }}
 
 requirements:
   build:
-    - python  # [win]
     - cmake  # [win]
-    - msinttypes  # [win]
-    - vc 9  # [win and py27]
-    - vc 14  # [win and (py35 or py36)]
-  run:
-    - vc 9  # [win and py27]
-    - vc 14  # [win and (py35 or py36)]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - msinttypes  # [win and vc<14]
 
 test:
   commands:
@@ -36,10 +34,12 @@ about:
   home: http://expat.sourceforge.net/
   license: MIT
   license_file: COPYING
-  summary: 'Expat XML parser library in C.'
+  summary: 'Expat XML parser library in C'
 
 extra:
   recipe-maintainers:
     - kwilcox
     - ocefpaf
     - pelson
+    - mingwandroid
+    - msarahan
