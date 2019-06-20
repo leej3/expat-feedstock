@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About expat
 ===========
 
@@ -18,9 +14,76 @@ Summary: Expat XML parser library in C
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/expat-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/expat-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/expat-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/expat-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/expat-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/expat-feedstock/branch/master)
+
+<table><tr>
+    <td>Appveyor</td>
+    <td>
+      <a href="https://ci.appveyor.com/project/conda-forge/expat-feedstock/branch/master">
+        <img alt="windows" src="https://img.shields.io/appveyor/ci/conda-forge/expat-feedstock/master.svg?label=Windows">
+      </a>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=276&branchName=master">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/expat-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=276&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/expat-feedstock?branchName=master&jobName=linux&configuration=linux_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=276&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/expat-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=276&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/expat-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=276&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/expat-feedstock?branchName=master&jobName=osx&configuration=osx_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_c_compilervs2008cxx_compilervs2008vc9</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=276&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/expat-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2008cxx_compilervs2008vc9" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_c_compilervs2015cxx_compilervs2015vc14</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=276&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/expat-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015vc14" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -119,4 +182,5 @@ Feedstock Maintainers
 * [@msarahan](https://github.com/msarahan/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@pelson](https://github.com/pelson/)
+* [@scopatz](https://github.com/scopatz/)
 
