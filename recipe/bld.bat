@@ -29,3 +29,7 @@ if errorlevel 1 exit 1
 :: Test.
 ctest -C Release
 if errorlevel 1 exit 1
+
+:: Workaround for package that got build with latet version that renamed these.
+copy %LIBRARY_PREFIX%\libexpat.dll %LIBRARY_PREFIX%\expat.dll || exit 1
+copy %LIBRARY_LIB%\libexpat.lib %LIBRARY_LIB%\expat.lib || exit 1
