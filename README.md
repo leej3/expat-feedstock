@@ -5,11 +5,9 @@ Home: http://expat.sourceforge.net/
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/expat-feedstock/blob/master/LICENSE.txt)
 
 Summary: Expat XML parser library in C
-
-
 
 Current build status
 ====================
